@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `404error`
 --
-CREATE DATABASE IF NOT EXISTS `404error` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `404error` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `404error`;
 
 -- --------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `author` (
   `img` varchar(127) NOT NULL,
   `biography` text NOT NULL,
   PRIMARY KEY (`id_author`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `book` (
   `descriptionpro` text NOT NULL,
   `description404` text NOT NULL,
   PRIMARY KEY (`id_book`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `bought` (
   `price` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_user`,`id_book`),
   KEY `id_book` (`id_book`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `id_category` varchar(15) NOT NULL,
   `name` varchar(127) NOT NULL,
   PRIMARY KEY (`id_category`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `interestedin` (
   `id_book` varchar(15) NOT NULL,
   PRIMARY KEY (`id_user`,`id_book`),
   KEY `id_book` (`id_book`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `ofcategory` (
   `id_category` varchar(15) NOT NULL,
   PRIMARY KEY (`id_book`,`id_category`),
   KEY `id_category` (`id_category`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `balance` int(64) NOT NULL,
   `facebook` varchar(127) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `wrote` (
   `id_book` varchar(15) NOT NULL,
   PRIMARY KEY (`id_author`,`id_book`),
   KEY `id_book` (`id_book`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Constraints for dumped tables
