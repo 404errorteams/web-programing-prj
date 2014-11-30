@@ -1,0 +1,9 @@
+array (
+  'Author' => 
+  array (
+    'id_author' => 'AU0001',
+    'name' => 'Viet',
+    'biography' => 'jssaskaksjdjlaksjdkasd',
+    'id' => '0',
+  ),
+)
