@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*body,html {
+	background-color: whitesmoke;
+}
+*/
+legend {
+	color: #468847;
+}
+
+#content-inner {
+	padding: 5px;
+	background-color: white;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 70px;
+	border-top: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+}
+
+.nav-header {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-shadow: none;
+	font-size: 14px;
+	color: white;
+	background-color: #0088cc;
+}
+
+.error {
+	color: red;
+}
+
+.error-message {
+	color: red;
+}
+
+label.error{
+    margin-left: 167px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+input.error {
+	border-color: red;
+}
+
+.square {
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.div-left {
+	float: left;
+	margin-left: 5px;
+}
+
+.label-gray,.badge-gray {
+	background-color: gray;
+}
+
+.label-blue,.badge-blue {
+	background-color: blue;
+}
+.control-label{
+        padding-right: 5px;
+        float: left ;
+        width: 160px ;
+        padding-top: 5px ;
+        text-align: right ;
+}
+.controls input, .controls textarea, .controls select{
+    width: 437px ;
+}
+.modal-top{
+    position: relative;
+    max-height: 400px;
+    text-align: right;
+    padding: 14px 15px 0px;
+    margin-bottom: 0;
+
+}
+.modal-top input{
+    margin-bottom: 0px!important;
+    margin-right: 300px;
+}
+.img-thumbnail {
+    clear: both;
+    overflow: auto;
+    width: 50px;
+    height: 50px;
+}

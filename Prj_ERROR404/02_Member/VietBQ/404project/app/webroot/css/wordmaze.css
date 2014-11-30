@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'carter_oneregular';
+    src: url('../fonts/carterone.eot');
+    src: url('../fonts/carterone.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/carterone.woff') format('woff'),
+         url('../fonts/carterone.ttf') format('truetype'),
+         url('../fonts/carterone.svg#carter_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Nishiki-teki';
+	src: url('../fonts/Nishiki-teki.eot?') format('eot'), 
+	     url('../fonts/Nishiki-teki.woff') format('woff'), 
+	     url('../fonts/Nishiki-teki.ttf')  format('truetype'),
+	     url('../fonts/Nishiki-teki.svg#Nishiki-teki') format('svg');
+}
+@font-face {
+	font-family: 'ElmerPFont';
+	src: url('../fonts/ElmerPFont.eot?') format('eot'), 
+	     url('../fonts/ElmerPFont.woff') format('woff'), 
+	     url('../fonts/ElmerPFont.ttf')  format('truetype'),
+	     url('../fonts/ElmerPFont.svg#ElmerPFont') format('svg');
+}
+@font-face {
+        font-family: "Skranji";
+        src: url('../fonts/232788086-Skranji-Regular.eot');
+        src: url('../fonts/232788086-Skranji-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/232788086-Skranji-Regular.svg#Skranji') format('svg'),
+        url('../fonts/232788086-Skranji-Regular.woff') format('woff'),
+        url('../fonts/232788086-Skranji-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+body
+{
+    background: url("../img/wordmaze/main_bg.jpg") no-repeat center ;
+    background-color: #8cd65a !important;
+}
+#container{
+    width: 950px;
+    margin: 0 auto;
+    
+}
+/*===========header=============*/
+#main_header {
+    float: left;
+    margin-top: 40px;
+}
+#header_left {
+    float: left;
+    margin-top: 20px
+}
+#header_right{
+    float: left
+}
+.mes_left{
+    display: inline-block;
+    float: left;
+    margin-top: 30px
+}
+.mes_right_black{
+    width: 355px;
+    height: 169px;
+    background: url("../img/wordmaze/black_bg_round.png") no-repeat;
+    padding: 10px 0 17px 20px;
+    margin: 40px 0 0 20px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block
+}
+.mes_left_green{
+    width: 334px;
+    height: 245px;
+    background: url("../img/wordmaze/green_bg_round.png") no-repeat;
+    padding: 17px 20px 17px 20px;
+    font-weight: bold;
+    color: #000;
+    display: inline-block
+}
+.mes_right_black p, .mes_left_green p{
+    font-family: ElmerPFont;
+    font-size: 23px;
+    line-height: 27px;
+}
+.mes_right{
+    display: inline-block;
+    height: 145px
+      
+}
+.mes_right img{
+    margin-bottom: 240px
+}
+#but_android{float: left}
+#but_ios{float: left;margin-left: 25px}
+/*===========header=============*/
+/*=============main_content==============*/
+#main_content{
+    float: left;
+}
+#main_content_head{
+    background:url("../img/wordmaze/page_title_bg.png") no-repeat;
+    width: 940px;
+    height: 113px;
+}
+#main_content_center{
+    background:url("../img/wordmaze/bg_page_title.png") repeat-y;
+    padding: 30px 0 0 30px;
+    margin-top: -2px;
+    margin-bottom: -2px;    
+}
+#main_content_center h3{
+    font-family: ElmerPFont,Nishiki-teki;
+    font-size: 20px;
+    color: #b1da69;
+    font-weight: bold;
+    line-height: 25px;
+}
+#main_content_center p{
+    font-family: ElmerPFont,Nishiki-teki;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.list_title{
+    margin-bottom: 23px;
+}
+.lifirst{
+    margin-left: 20px;
+}
+#main_content_bottom{
+    background:url("../img/wordmaze/page_title_bg_foot.png") no-repeat;
+    width: 940px;
+    height: 60px;
+}
+.taparrow img{
+    margin-top: 200px}
+#bottombox{
+    width: 861px;
+    margin: 0 auto;
+    border-top: 1px #666 dashed;
+    text-align: center;
+    padding-top: 30px; 
+    height: 50px
+}
+#but_android_bot{
+    display: inline-block
+}
+#but_ios_bot{
+    display: inline-block;
+    margin-left: 25px
+}
+/*=============main_content==============*/
+/*============main_footer=============*/
+#main_footer{
+    font-family: Skranji;
+    font-weight: bold;
+    padding-bottom: 20px;
+    line-height: 50px
+}
+
+/*============main_footer=============*/
