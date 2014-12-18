@@ -5,4 +5,5 @@ class Bought extends AppModel{
     
     public $name = 'Bought';
     public $useTable = 'bought';
+    public $primaryKey = 'id';
 }

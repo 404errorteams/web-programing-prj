@@ -5,7 +5,7 @@
         <meta charset="utf-8">
 	<?php echo $this->Html->charset(); ?>
         <title>
-		<?php echo $this->fetch('title_for_layout'); ?>
+		<?php echo $title_for_layout; ?>
         </title>
 	<?php
 		
@@ -16,6 +16,10 @@
                         
 	?>
         <base href="http://localhost/404project/">
+        <?php 
+            echo $this->Html->css(ROOT_URL.'app/webroot/jquery/bootstrap/css/bootstrap.min2.css');
+            echo $this->Html->css(ROOT_URL.'app/webroot/jquery/ui-lightness/jquery-ui-1.9.2.custom.min.css?'.(DEBUG_NO_CACHE?time():'0'));
+        ?>
         <link href="ebook/css/style.css" rel="stylesheet" type="text/css" /><!-- All css -->
         <link href="ebook/css/bs.css" rel="stylesheet" type="text/css" /><!-- Bootstrap Css -->
         <link rel="stylesheet" type="text/css" href="ebook/css/main-slider.css" /><!-- Main Slider Css -->
@@ -25,19 +29,20 @@
         <noscript>
         <link rel="stylesheet" type="text/css" href="ebook/css/noJS.css" />
         </noscript>
-        <link rel="shortcut icon" href="ebook/ico/favicon.png">
+        <link rel="shortcut icon" href="img/book.ico">
 
     </head>
     <body>
         <?php echo $this->element("ebook_navbar_top"); ?>
         <div id="container">
-            
+
             <div id="content">
 
-
+          <?php echo $this->fetch('content'); ?>
             </div>
 
         </div>
+        <?php echo $this->element("ebook_footer"); ?>
         <script type="text/javascript" src="ebook/js/lib.js"></script><!-- lib Js -->
         <script type="text/javascript" src="ebook/js/modernizr.js"></script><!-- Modernizr -->
         <script type="text/javascript" src="ebook/js/easing.js"></script><!-- Easing js -->
@@ -49,5 +54,8 @@
         <script type="text/javascript" src="ebook/js/bookblock.js"></script><!-- Flip Slider -->
         <script type="text/javascript" src="ebook/js/custom.js"></script><!-- Custom js -->
         <script type="text/javascript" src="ebook/js/social.js"></script><!-- Social Icons -->
+        <script type="text/javascript" src="js/jquery-ui-timepicker-addon.js"></script><!-- Social Icons -->
+        <script type="text/javascript" src="js/custom.js"></script><!-- Social Icons -->
+
     </body>
 </html>

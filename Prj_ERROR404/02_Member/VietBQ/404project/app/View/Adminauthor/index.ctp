@@ -38,41 +38,6 @@
 
             </div>
 
-
-       
-
-<!--
-<div id="search_status">
-
-    <form action="adminauthor/index" method="get" class="form-horizontal" id="search_form" style="width: 800px;">
-        <legend style="border-bottom: none;float: left;width: 80px;margin-top: 20px;">Word<i style=" margin-left: 15px;" class="icon-search"></i></legend>
-        <div style="width: 230px;float: left;margin-left: 10px;" class="control-group">
-            <input type="text" name="searchword" placeholder="add search word" value="<?php //if(!empty($this->params['url']['searchword'])) echo $this->params['url']['searchword'];?>">
-        </div>
-        <legend style="border-bottom: none;float: left;width: 120px; display: inline-block;margin-top: 20px;">Field<i style=" margin-left: 15px;" class="icon-search"></i></legend>
-        <div style="width: 230px;float: left;margin-left: 10px; display: inline-block;" class="control-group">
-            <select name="searchfield">
-                <?php /*
-                    $sel1 = '';
-                    $sel2 = '';
-                    if($searchfield =='id_author'){
-                        $sel1 = 'selected';
-                    }
-                    else{
-                        $sel2 = 'selected';
-                    }*/
-                ?>
-                
-                 
-                <option value="id_author" <?php //echo $sel1?>>Id_author</option>
-                <option value="name" <?php //echo $sel2?> >Name</option>
-            </select>
-        </div>
-        <div style="background-color: #fff; border-top: none;" >
-            <input type="submit" value="Search" class="btn btn-primary" id="search" style="margin-top: 20px;" >
-        </div>
-    </form>
-</div>-->
 <legend>Admin Author</legend>
 <div class="alert alert-success alert-dismissable" style="display:none;">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
@@ -102,11 +67,13 @@
                 <td><?php echo $Author['Author']['id_author']; ?></td>
                 <td style="word-wrap:break-word;width:100px;">
                     <?php 
+                
                     if( isset($Author['Author']['img']) && !empty($Author['Author']['img']))
                     {
                         $img_path =  IMAGE_UPLOAD_PATH_AUTHOR . $Author['Author']['img'];
+                        
                         if(file_exists($img_path)){
-                             echo "<a title='' href='" . ROOT_URL . "img/author/" .$Author['Author']['img']. "?" . time() . "' target='_blank'><img class='img-thumbnail' alt='' src='" . ROOT_URL . "app/webroot/img/author/" .$Author['Author']['img']. "' display: inline; visibility: visible;' /></a>";
+                             echo "<a title='' href='" . IMAGE_UPLOAD_AUTHOR .$Author['Author']['img']. "?" . time() . "' target='_blank'><img class='img-thumbnail' alt='' src='" . IMAGE_UPLOAD_AUTHOR.$Author['Author']['img']. "' display: inline; visibility: visible;' /></a>";
                         }
                         else{
                             echo '<img class="img-thumbnail" alt="" src="' . ROOT_URL ."app/webroot/img/" . NO_IMAGE . '?' . time() . '" />';

@@ -18,13 +18,6 @@ define('LOG_PATH', APP_PATH . 'log/');
 define('ROW_OF_PAGE', 20);
 define('DIR_NAME', basename(BASE_PATH));
 
-define('IMAGE_UPLOAD_PATH', BASE_PATH . 'data/img/');
-define('IMAGE_UPLOAD_PATH_AUTHOR', WEBROOT_PATH . 'img/author/');
-define('IMAGE_UPLOAD_PATH_BOOK', WEBROOT_PATH . 'img/book/');
-define('IMAGE_UPLOAD_PATH_USER', WEBROOT_PATH . 'img/user/');
-
-define('NO_IMAGE', 'NO_IMAGE.png');
-
 
 ///
 /* Import library */
@@ -117,6 +110,18 @@ if (is_localhost()) { // localhost
     define('NUM_OF_QUESTION', 20);
     define('DIR_MP3', FILEMP_PATH);
 }
+
+define('IMAGE_UPLOAD_PATH', BASE_PATH . 'data/img/');
+define('IMAGE_UPLOAD_PATH_AUTHOR', WEBROOT_PATH . 'img\img_author\\');
+define('IMAGE_UPLOAD_PATH_BOOK', WEBROOT_PATH . 'img\\');
+define('IMAGE_UPLOAD_PATH_USER', WEBROOT_PATH . 'img/user/');
+define('IMAGE_UPLOAD_AUTHOR', ROOT_URL . 'img/img_author/');
+define('IMAGE_UPLOAD_BOOK', ROOT_URL . 'img/');
+define('IMAGE_UPLOAD_USER', ROOT_URL . 'img/user/');
+define('NO_IMAGE', 'NO_IMAGE.png');
+define('AUTHOR_DEFAULT_IMAGE','author_default.png');
+define('BOOK_DEFAULT_IMAGE','book_default.png');
+
 
 /*
  * Define database params
@@ -216,6 +221,8 @@ GlobalVar::write("admin_access_list_arr", $admin_access_list_arr);
 
 define('SESSION_USER_ADMIN', 'session_user_admin');
 define('SESSION_USER_ID', 'session_user_id');
+define('SESSION_USER', 'session_user');
+define('SESSION_ID_USER', 'session_id_user');
 
 //* API linklib */
 define('LINKLIB_SECRET_KEY', 'b4m');
@@ -248,11 +255,16 @@ GlobalVar::write("sidebar_nav", array(
 ));
 GlobalVar::write('user_gender', array(
     0 => 'female',
-    1 => 'male'
+    1 => 'male',
+    2=> 'orther'
 ));
 GlobalVar::write('search_book',array(
     '1'=>'id_book',
     '2'=>'name',
+));
+GlobalVar::write('cart_status',array(
+    '0'=>'Not pay',
+    '1'=>'Paid'
 ));
 
 
