@@ -106,7 +106,7 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
-
+Configure::load('config');
 require_once 'define.inc';
-
+require_once 'config.php';
 CakePlugin::loadAll();

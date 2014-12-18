@@ -71,9 +71,9 @@
                     <?php 
                     if( isset($Book['Book']['img']) && !empty($Book['Book']['img']))
                     {
-                        $img_path =  IMAGE_UPLOAD_PATH_AUTHOR . $Book['Book']['img'];
+                        $img_path =  IMAGE_UPLOAD_PATH_BOOK . $Book['Book']['img'];
                         if(file_exists($img_path)){
-                             echo "<a title='' href='" . ROOT_URL . "img/book/" .$Book['Book']['img']. "?" . time() . "' target='_blank'><img class='img-thumbnail' alt='' src='" . ROOT_URL . "app/webroot/img/book/" .$Book['Book']['img']. "' display: inline; visibility: visible;' /></a>";
+                             echo "<a title='' href='" . IMAGE_UPLOAD_BOOK .$Book['Book']['img']. "?" . time() . "' target='_blank'><img class='img-thumbnail' alt='' src='" .IMAGE_UPLOAD_BOOK .$Book['Book']['img']. "' display: inline; visibility: visible;' /></a>";
                         }
                         else{
                             echo '<img class="img-thumbnail" alt="" src="' . ROOT_URL ."app/webroot/img/" . NO_IMAGE . '?' . time() . '" />';
